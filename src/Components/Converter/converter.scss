@@ -1,0 +1,92 @@
+.converter {
+  flex-wrap: wrap;
+  border: 1px rgba(102, 102, 102, 0.281) solid;
+  border-radius: 5px;
+  background-color: #fff;
+  position: relative;
+  bottom: -300px;
+  margin: auto;
+  width: 50%;
+  height: 150px;
+  padding: 25px;
+  display: flex;
+  min-width: 573px;
+  &__convert-btn {
+    padding: 0;
+    margin: 0 auto;
+    background-color: unset;
+    background-color: unset;
+    border: unset;
+    width: 50px;
+    height: 32px;
+    background-image: url('../../../public/convertBtn.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 0px;
+    transition: transform 0.5s ease;
+    &:hover {
+      cursor: pointer;
+      transform: rotate(180deg);
+    }
+  }
+  &__selector {
+    &--BTC {
+      background-image: url('../../../public/bitcoin-btc-logo.svg');
+      background-size: 16px 16px;
+      background-repeat: no-repeat;
+      padding-left: 25px;
+      background-position: 5px 8px;
+    }
+    &--USDT {
+      background-image: url('../../../public/tether-usdt-logo.svg');
+      background-size: 16px 16px;
+      background-repeat: no-repeat;
+      padding-left: 25px;
+      background-position: 5px 8px;
+    }
+    &--ETH {
+      background-image: url('../../../public/ethereum-eth-logo.svg');
+      background-size: 16px 16px;
+      background-repeat: no-repeat;
+      padding-left: 25px;
+      background-position: 5px 8px;
+    }
+  }
+  &__course {
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0;
+  }
+  &__disclaimer {
+    margin-top: 0;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+  }
+}
+
+.ant-select-item-option-content {
+  & .converter__selector {
+    &--BTC {
+      padding-left: 23px;
+      background-position: 0px 3px;
+    }
+    &--USDT {
+      padding-left: 23px;
+      background-position: 0px 3px;
+    }
+    &--ETH {
+      padding-left: 23px;
+      background-position: 0px 3px;
+    }
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-utseende: ingen;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
